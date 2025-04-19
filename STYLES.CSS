@@ -1,0 +1,908 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5efeb;
+    color: #2f4156;
+}
+
+h1, h2 {
+    color: #2f4156;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f4156;
+    padding: 10px 20px;
+    border-bottom: 2px solid #567c8d;
+}
+
+.navbar a {
+    color: #c8d9e6;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #567c8d;
+    color: #ffffff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Button Styles */
+.custom-button {
+    background-color: #567c8d;
+    color: #ffffff;
+    border: none;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.custom-button:hover {
+    border-color: #2f4156;
+}
+
+.custom-button:active {
+    background-color: #2f4156;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #2f4156;
+    color: #c8d9e6;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* About Page Styles */
+.about-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(47, 65, 86, 0.1);
+}
+
+.about-container h1 {
+    font-size: 2.5em;
+    color: #2f4156;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #567c8d;
+    margin-bottom: 15px;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Services Page Styles */
+.services-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(47, 65, 86, 0.1);
+    border-radius: 8px;
+}
+
+.services-container h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2f4156;
+}
+
+.services-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #567c8d;
+}
+
+/* Service Item */
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #c8d9e6;
+    padding-bottom: 20px;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-item h2 {
+    font-size: 28px;
+    color: #2f4156;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #567c8d;
+    flex: 3;
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.service-item:hover {
+    background-color: #f5efeb;
+    transition: background-color 0.3s ease;
+}
+
+/* Call to Action (CTA) */
+.cta {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #567c8d;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(47, 65, 86, 0.1);
+}
+
+.cta p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.cta a.cta-button {
+    font-size: 20px;
+    padding: 12px 30px;
+    background-color: #2f4156;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.cta a.cta-button:hover {
+    background-color: #c8d9e6;
+    color: #2f4156;
+}
+
+/* Categories Container and Hover Functionality */
+.categories-container {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 0px 5px rgba(47, 65, 86, 0.1);
+    transition: left 0.3s ease;
+    z-index: 999;
+    padding-top: 60px;
+}
+
+.hover-zone:hover + .categories-container {
+    left: 0;
+}
+
+.categories {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Category Sections */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(47, 65, 86, 0.1);
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2f4156;
+}
+
+section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #567c8d;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 5px 0;
+}
+
+section ul li a {
+    font-size: 16px;
+    color: #567c8d;
+    transition: color 0.3s ease;
+}
+
+section ul li a:hover {
+    color: #2f4156;
+}
+
+/* Hover Zone */
+.hover-zone {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+/* Categories Container Additional Styles */
+.categories-container {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(47, 65, 86, 0.1);
+    transition: left 0.3s ease;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+}
+
+/* Category Links */
+.categories h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.categories a {
+    color: #2f4156;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.categories a:hover {
+    background-color: #567c8d;
+    color: #ffffff;
+}
+
+/* Previews Section */
+.previews-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5efeb;
+}
+
+.previews-section h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #2f4156;
+}
+
+.preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.preview-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(47, 65, 86, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.preview-item:hover {
+    transform: scale(1.03);
+}
+
+.preview-image img {
+    width: 100%;
+    height: auto;
+}
+
+.preview-button {
+    margin: 15px;
+    padding: 12px 30px;
+    background-color: #567c8d;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.preview-button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.preview-button:hover {
+    background-color: #2f4156;
+}
+
+/* After your existing styles, add this new section for font catalogue styles */
+
+/* Font Catalogue Layout
+   This section handles the overall structure of the font catalogue page */
+   .font-catalogue {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    /* Using our existing color scheme for consistency */
+    background-color: #f5efeb;
+}
+
+.font-grid {
+    display: grid;
+    /* This creates a responsive grid that adjusts based on screen size */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Individual Font Card Styling
+   Each font card is a self-contained unit with preview and info sections */
+.font-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    /* Using our existing shadow style for consistency */
+    box-shadow: 0 4px 8px rgba(47, 65, 86, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.font-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Font Preview Section
+   This area shows how the font looks in action */
+.font-preview {
+    height: 200px;
+    background-color: #f5efeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 32px;
+}
+
+/* Font Information Section
+   Contains the title, description, and pricing details */
+.font-info {
+    padding: 20px;
+}
+
+.font-title {
+    color: #2f4156;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.font-description {
+    color: #567c8d;
+    margin-bottom: 20px;
+}
+
+.font-price {
+    color: #2f4156;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Font Card Button
+   Consistent with our existing button styles but specific to font cards */
+.buy-button {
+    background-color: #567c8d;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #2f4156;
+}
+
+/* Bundle Card Styling
+   Special styling for the bundle offer section */
+.bundle-card {
+    grid-column: 1 / -1; /* Makes the bundle card span full width */
+    background-color: #2f4156;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+.bundle-title {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+.bundle-description {
+    color: #c8d9e6;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Bundle Features Grid
+   Organizes the included fonts in a responsive grid */
+.bundle-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.bundle-feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #c8d9e6;
+}
+
+.bundle-price {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Bundle Button Styling
+   Inverted colors for better contrast on dark background */
+.bundle-button {
+    background-color: #ffffff;
+    color: #2f4156;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.bundle-button:hover {
+    background-color: #c8d9e6;
+}
+
+/* Savings Tag
+   Highlights the discount amount on the bundle */
+.savings-tag {
+    background-color: #567c8d;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 10px;
+}
+/* Cart Icon */
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #567c8d;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.cart-icon:hover {
+    background-color: #2f4156;
+}
+
+/* Cart Count Badge */
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff4444;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Cart Sidebar */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-sidebar.show {
+    right: 0;
+}
+
+/* Cart Header */
+.cart-header {
+    padding: 20px;
+    background-color: #2f4156;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.cart-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+/* Cart Items Container */
+.cart-items {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* Individual Cart Item */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+}
+
+.cart-item:hover {
+    background-color: #f5f5f5;
+}
+
+.item-details {
+    flex-grow: 1;
+    padding-right: 15px;
+}
+
+.item-details h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #2f4156;
+}
+
+.item-details p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #567c8d;
+}
+
+/* Remove Item Button */
+.remove-item {
+    background: none;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.remove-item:hover {
+    color: #cc0000;
+}
+
+/* Cart Footer */
+.cart-footer {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #eee;
+}
+
+.cart-total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2f4156;
+    margin-bottom: 15px;
+}
+
+/* Cart Buttons */
+#checkout-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #567c8d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+#checkout-button:hover {
+    background-color: #2f4156;
+}
+
+.clear-cart-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.clear-cart-button:hover {
+    background-color: #cc0000;
+}
+
+/* Notification */
+.notification {
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    background-color: #567c8d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 1002;
+}
+
+.notification.show {
+    bottom: 20px;
+    opacity: 1;
+}
+
+/* Empty Cart State */
+.cart-empty {
+    text-align: center;
+    padding: 30px 20px;
+    color: #567c8d;
+    font-style: italic;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .cart-sidebar {
+        width: 100%;
+        right: -100%;
+    }
+
+    .notification {
+        width: 80%;
+        right: 10%;
+        text-align: center;
+    }
+}
+/* Authentication Pages Styles */
+.auth-container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(47, 65, 86, 0.1);
+    text-align: center;
+}
+
+.auth-container h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #2f4156;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #567c8d;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c8d9e6;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #567c8d;
+    outline: none;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.remember-me, .terms-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #567c8d;
+}
+
+.remember-me input, .terms-checkbox input {
+    margin: 0;
+}
+
+.forgot-password {
+    color: #567c8d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover {
+    color: #2f4156;
+    text-decoration: underline;
+}
+
+.auth-button {
+    background-color: #567c8d;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #2f4156;
+}
+
+.auth-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #c8d9e6;
+    color: #567c8d;
+}
+
+.auth-footer a {
+    color: #2f4156;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Password Strength Meter */
+.password-strength-meter {
+    height: 5px;
+    background-color: #f5efeb;
+    border-radius: 3px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.password-hint {
+    font-size: 12px;
+    color: #567c8d;
+    margin-top: 5px;
+}
+
+/* Responsive Design for Auth Pages */
+@media (max-width: 600px) {
+    .auth-container {
+        width: 90%;
+        padding: 20px;
+        margin: 40px auto;
+    }
+    
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}   

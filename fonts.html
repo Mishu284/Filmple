@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Collection - FILMPLE</title>
+    <link rel="stylesheet" href="STYLES.CSS">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="FILMPLE.html" class="logo">FILMPLE</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <!-- Font Catalogue -->
+    <div class="font-catalogue">
+        <h1 style="color: #2f4156; text-align: center; margin-bottom: 40px;">Professional Font Collection</h1>
+        
+        <div class="font-grid">
+            <!-- Font 1 -->
+            <div class="font-card">
+                <div class="font-preview" style="font-family: 'Arial';">
+                    Cinematic
+                </div>
+                <div class="font-info">
+                    <h2 class="font-title">Cinematic Sans</h2>
+                    <p class="font-description">Perfect for movie titles and dramatic intros. Modern and bold design.</p>
+                    <div class="font-price">$1.50</div>
+                    <button class="buy-button" onclick="cart.addItem({
+                        id: 'cinematic-sans',
+                        title: 'Cinematic Sans',
+                        price: 1.50
+                    })">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Font 2 -->
+            <div class="font-card">
+                <div class="font-preview" style="font-family: 'Georgia';">
+                    Classic
+                </div>
+                <div class="font-info">
+                    <h2 class="font-title">Classic Script</h2>
+                    <p class="font-description">Elegant script font ideal for credits and romantic scenes.</p>
+                    <div class="font-price">$0.50</div>
+                    <button class="buy-button" onclick="cart.addItem({
+                        id: 'classic-script',
+                        title: 'Classic Script',
+                        price: .50
+                    })">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Font 3 -->
+            <div class="font-card">
+                <div class="font-preview" style="font-family: 'Impact';">
+                    Action
+                </div>
+                <div class="font-info">
+                    <h2 class="font-title">Action Bold</h2>
+                    <p class="font-description">High-impact font perfect for action sequences and trailers.</p>
+                    <div class="font-price">$0.50</div>
+                    <button class="buy-button" onclick="cart.addItem({
+                        id: 'action-bold',
+                        title: 'Action Bold',
+                        price: .50
+                    })">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Font 4 -->
+            <div class="font-card">
+                <div class="font-preview" style="font-family: 'Courier New';">
+                    Tech
+                </div>
+                <div class="font-info">
+                    <h2 class="font-title">Tech Mono</h2>
+                    <p class="font-description">Modern monospace font for tech-themed content and UI elements.</p>
+                    <div class="font-price">$0.50'</div>
+                    <button class="buy-button" onclick="cart.addItem({
+                        id: 'tech-mono',
+                        title: 'Tech Mono',
+                        price: .50
+                    })">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Font 5 -->
+            <div class="font-card">
+                <div class="font-preview" style="font-family: 'Times New Roman';">
+                    Premium
+                </div>
+                <div class="font-info">
+                    <h2 class="font-title">Premium Serif</h2>
+                    <p class="font-description">Professional serif font for documentary and corporate videos.</p>
+                    <div class="font-price">$1.99</div>
+                    <button class="buy-button" onclick="cart.addItem({
+                        id: 'premium-serif',
+                        title: 'Premium Serif',
+                        price: 1.99
+                    })">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Bundle Pack -->
+            <div class="bundle-card">
+                <h2 class="bundle-title">Complete Font Collection Bundle</h2>
+                <p class="bundle-description">Get all 5 professional fonts in one package and save 20%!</p>
+                
+                <div class="bundle-features">
+                    <div class="bundle-feature">✓ Cinematic Sans</div>
+                    <div class="bundle-feature">✓ Classic Script</div>
+                    <div class="bundle-feature">✓ Action Bold</div>
+                    <div class="bundle-feature">✓ Tech Mono</div>
+                    <div class="bundle-feature">✓ Premium Serif</div>
+                </div>
+
+                <div class="bundle-price">
+                    $3.99 <span class="savings-tag">Save $1</span>
+                </div>
+
+                <button class="bundle-button">Get the Bundle</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FILMPLE. All Rights Reserved.</p>
+    </footer>
+    <script src="/js/CartSystems.js"></script>
+</body>
+</html>

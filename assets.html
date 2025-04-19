@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Assets - FILMPLE</title>
+    <link rel="stylesheet" href="STYLES.CSS">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="FILMPLE.html" class="logo">FILMPLE</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Assets Section -->
+    <div class="assets-container">
+        <h1 style="color: #2f4156; text-align: center; margin-bottom: 40px;">Video Asset Collection</h1>
+
+        <div class="asset-grid">
+            <!-- Asset 1 -->
+            <div class="asset-card">
+                <div class="asset-preview">
+                    <img src="asset1.jpg" alt="Asset 1">
+                </div>
+                <div class="asset-info">
+                    <h2 class="asset-title">Nature Timelapse</h2>
+                    <p class="asset-description">Stunning timelapse footage of a serene forest scene.</p>
+                    <div class="asset-price">$9.99</div>
+                    <button class="buy-button" onclick="cart.addItem({
+                        id: 'nature-timelapse',
+                        title: 'Nature Timelapse',
+                        price: 9.99
+                    })">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Asset 2 -->
+            <div class="asset-card">
+                <div class="asset-preview">
+                    <img src="asset2.jpg" alt="Asset 2">
+                </div>
+                <div class="asset-info">
+                    <h2 class="asset-title">City Skyline</h2>
+                    <p class="asset-description">Aerial footage of a modern city skyline at night.</p>
+                    <div class="asset-price">$14.99</div>
+                    <button class="buy-button" onclick="cart.addItem({
+                        id: 'city-skyline',
+                        title: 'City Skyline',
+                        price: 14.99
+                    })">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Asset 3 -->
+            <div class="asset-card">
+                <div class="asset-preview">
+                    <img src="asset3.jpg" alt="Asset 3">
+                </div>
+                <div class="asset-info">
+                    <h2 class="asset-title">Animated Transitions</h2>
+                    <p class="asset-description">Collection of smooth video transitions for your projects.</p>
+                    <div class="asset-price">$19.99</div>
+                    <button class="buy-button" onclick="cart.addItem({
+                        id: 'animated-transitions',
+                        title: 'Animated Transitions',
+                        price: 19.99
+                    })">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Asset 4 -->
+            <div class="asset-card">
+                <div class="asset-preview">
+                    <img src="asset4.jpg" alt="Asset 4">
+                </div>
+                <div class="asset-info">
+                    <h2 class="asset-title">Industrial Footage</h2>
+                    <p class="asset-description">Cinematic footage of industrial machinery in action.</p>
+                    <div class="asset-price">$12.99</div>
+                    <button class="buy-button" onclick="cart.addItem({
+                        id: 'industrial-footage',
+                        title: 'Industrial Footage',
+                        price: 12.99
+                    })">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Bundle Pack -->
+            <div class="bundle-card">
+                <h2 class="bundle-title">Complete Video Asset Bundle</h2>
+                <p class="bundle-description">Get all 4 video assets in one package and save 20%!</p>
+                
+                <div class="bundle-features">
+                    <div class="bundle-feature">✓ Nature Timelapse</div>
+                    <div class="bundle-feature">✓ City Skyline</div>
+                    <div class="bundle-feature">✓ Animated Transitions</div>
+                    <div class="bundle-feature">✓ Industrial Footage</div>
+                </div>
+
+                <div class="bundle-price">
+                    $45.99 <span class="savings-tag">Save $11</span>
+                </div>
+
+                <button class="bundle-button">Get the Bundle</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Systems -->
+    <div id="cart-container"></div>
+    <script src="/js/CartSystems.js"></script>
+</body>
+</html>

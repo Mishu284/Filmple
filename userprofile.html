@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile - FILMPLE</title>
+    <link rel="stylesheet" href="STYLES.CSS">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="FILMPLE.html" class="logo">FILMPLE</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Profile Container -->
+    <div class="profile-container">
+        <h1>Your Profile</h1>
+        
+        <div class="profile-info">
+            <div class="profile-section">
+                <h2>Account Information</h2>
+                <form id="profile-form" class="profile-form">
+                    <div class="form-group">
+                        <label for="profile-name">Full Name</label>
+                        <input type="text" id="profile-name" name="fullname">
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-email">Email (cannot be changed)</label>
+                        <input type="email" id="profile-email" name="email" disabled>
+                    </div>
+                    <button type="submit" class="auth-button">Save Changes</button>
+                </form>
+            </div>
+            
+            <div class="profile-section">
+                <h2>Password</h2>
+                <form id="password-form" class="profile-form">
+                    <div class="form-group">
+                        <label for="current-password">Current Password</label>
+                        <input type="password" id="current-password" name="current-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-password">New Password</label>
+                        <input type="password" id="new-password" name="new-password" required>
+                        <div class="password-strength-meter">
+                            <div class="strength-bar"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-new-password">Confirm New Password</label>
+                        <input type="password" id="confirm-new-password" name="confirm-new-password" required>
+                    </div>
+                    <button type="submit" class="auth-button">Change Password</button>
+                </form>
+            </div>
+            
+            <div class="profile-section">
+                <h2>Purchase History</h2>
+                <div class="purchase-history">
+                    <p class="empty-history">You haven't made any purchases yet.</p>
+                    <!-- Purchase history items will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-actions">
+            <button id="logout-button" class="logout-button">Sign Out</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FILMPLE. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Include Authentication Utilities -->
+    <script src="auth.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
